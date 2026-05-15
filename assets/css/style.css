@@ -1047,3 +1047,129 @@ nav ul li a button {
     object-fit: cover;
     display: block;
 }
+
+.application-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 22px 18px 18px;
+    background: linear-gradient(180deg, rgba(10, 17, 35, 0) 0%, rgba(10, 17, 35, 0.9) 70%);
+    color: #FFFFFF;
+}
+
+.application-overlay h3 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    line-height: 1.1;
+    font-weight: 500;
+    font-family: "Urbanist", sans-serif;
+}
+
+.application-overlay p {
+    margin: 0;
+    color: #DCE3F3;
+    line-height: 1.45;
+}
+
+.industry-grid,
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.industry-card,
+.portfolio-card,
+.resource-card {
+    background: #FFFFFF;
+    border: 1px solid #E3E8F3;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.testimonials .section-heading {
+    text-align: center;
+}
+
+.testimonials-subtitle {
+    margin: 0 auto;
+    max-width: 760px;
+    color: #646E7A;
+    line-height: 1.45;
+}
+
+.testimonial-carousel-wrap {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.testimonial-track {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    animation: testimonials-scroll 28s linear infinite;
+}
+
+.testimonial-carousel-wrap:hover .testimonial-track {
+    animation-play-state: paused;
+}
+
+.testimonial-card {
+    width: 360px;
+    min-height: 320px;
+    background: #F7F8F9;
+    border: 1px solid #E2E5EC;
+    border-radius: 18px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-mark {
+    color: #2B3990;
+    font-size: 58px;
+    line-height: 0.7;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    line-height: 1.1;
+    font-family: "Urbanist", sans-serif;
+}
+
+.testimonial-card p {
+    margin: 0;
+    color: #5D6675;
+    line-height: 1.5;
+}
+
+.testimonial-author {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 18px;
+}
+
+.author-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #E5E8EF;
+    display: inline-block;
+}
+
+.testimonial-author h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.testimonial-author small {
+    color: #778093;
+    font-size: 12px;
+}
