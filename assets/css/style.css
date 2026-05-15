@@ -1173,3 +1173,27 @@ nav ul li a button {
     color: #778093;
     font-size: 12px;
 }
+
+@keyframes testimonials-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 8px));
+    }
+}
+
+.resources {
+    background: #FFFFFF;
+}
+
+.portfolio-heading {
+    text-align: center;
+    padding: 24px 20px 20px;
+}
+
+.portfolio-heading h2 {
+    margin: 0 0 8px;
+    font-family: "Urbanist", sans-serif;
+}
