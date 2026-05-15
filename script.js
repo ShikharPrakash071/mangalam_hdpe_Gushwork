@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    
     // Sticky top bar appears only after user scrolls beyond first fold.
     function handleScroll() {
         if (!firstFold || !topbar) {
@@ -99,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 processPoints.innerHTML = `<li>${pointOne}</li><li>${pointTwo}</li>`;
             }
         });
-    }); 
+    });
 
     function getApplicationsPerView() {
         if (window.innerWidth <= 768) {
