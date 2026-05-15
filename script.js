@@ -188,9 +188,17 @@ faqRows.forEach((row) => {
         if (mobileProcTitle)  mobileProcTitle.textContent = step.title;
         if (mobileProcDesc)   mobileProcDesc.textContent = step.desc;
         if (mobileProcPoints) {
-            mobileProcPoints.innerHTML =
-                \`<div class="feature-item"><img src="assets/images/CheckCircle.png" alt="check"><p>\${step.p1}</p></div>
-                 <div class="feature-item"><img src="assets/images/CheckCircle.png" alt="check"><p>\${step.p2}</p></div>\`;
+            mobileProcPoints.innerHTML = `
+    <div class="feature-item">
+        <img src="assets/images/CheckCircle.png" alt="check">
+        <p>${step.p1}</p>
+    </div>
+
+    <div class="feature-item">
+        <img src="assets/images/CheckCircle.png" alt="check">
+        <p>${step.p2}</p>
+    </div>
+`;
         }
     }
 
