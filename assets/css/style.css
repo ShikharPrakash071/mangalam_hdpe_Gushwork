@@ -124,7 +124,7 @@ nav ul li a button {
 
 /*Website background css*/
 .sectionMain.noiseBgimage {
-    background-image: url('../images/noise_texture.png');
+    background-image: url(assets/images/noise-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
