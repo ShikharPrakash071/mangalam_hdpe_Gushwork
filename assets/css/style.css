@@ -40,3 +40,84 @@ header {
     text-transform: uppercase;
     transition: top 0.35s ease;
 }
+
+.sticky-topbar.show {
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 12px 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #262A2E;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav ul li a button {
+    background-color: #2B3990;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.dropdown img {
+    cursor: pointer;
+    width: 13px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(9, 17, 35, 0.12);
+    list-style: none;
+    display: none;
+    padding: 8px 0;
+    min-width: 150px;
+    gap: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 13px;
+}
+
+.logo img {
+    width: 100px;
+}
