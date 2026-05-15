@@ -924,3 +924,126 @@ nav ul li a button {
     height: 12px;
     object-fit: contain;
 }
+
+.catalogue-strip {
+    border: 1px solid #CFD1D4;
+    padding: 16px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    border-radius: 10px;
+}
+
+.catalogue-strip h3 {
+    margin: 0 0 4px;
+    font-size: 26px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+}
+
+.catalogue-strip p {
+    margin: 0;
+    color: #5F6876;
+}
+
+.catalogue-form {
+    width: 100%;
+    max-width: 380px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.catalogue-form input {
+    min-height: 38px;
+    border: 1px solid #D8DDE7;
+    border-radius: 8px;
+    padding: 0 12px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.catalogue-form button {
+    min-height: 38px;
+    border: none;
+    border-radius: 10px;
+    background: #2B3990;
+    color: #FFFFFF;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.applications-panel {
+    padding: 18px 0 0;
+}
+
+.applications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 20px 18px;
+}
+
+.applications-header h2 {
+    margin: 0 0 8px;
+    font-size: 38px;
+    line-height: 1.08;
+    max-width: 660px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.applications-header p {
+    max-width: 760px;
+}
+
+.applications-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.applications-controls button {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #D7DCE5;
+    background: #FFFFFF;
+    color: #2F3440;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.applications-controls button img {
+    width: 19px;
+    height: 19px;
+}
+
+.applications-track-wrap {
+    overflow: hidden;
+}
+
+.applications-track {
+    display: flex;
+    gap: 14px;
+    transition: transform 0.35s ease;
+    padding: 0 20px 20px;
+}
+
+.application-card {
+    position: relative;
+    min-width: calc((100% - 28px) / 3);
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.application-card img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+}
