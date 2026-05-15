@@ -121,3 +121,304 @@ nav ul li a button {
 .logo img {
     width: 100px;
 }
+
+/*Website background css*/
+.sectionMain.noiseBgimage {
+    background-image: url('../images/noise_texture.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*fold-one css*/
+
+.fold-one {
+    background: #FFFFFF;
+    padding: 28px 0 38px;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.hero-breadcrumb {
+    margin: 0 0 16px;
+    font-size: 13px;
+    color: #767E8E;
+}
+
+.hero-breadcrumb .breadcrumb-light {
+
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #4D545C;
+}
+
+.hero-breadcrumb .breadcrumb-dark {
+    font-weight: 400;
+    color: #0D0D0D;
+    font-size: 14px;
+}
+
+.hero-breadcrumb span {
+    margin: 0 8px;
+}
+
+.hero-showcase {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    gap: 50px;
+}
+
+.hero-showcase .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-gallery {
+    min-width: 0;
+}
+
+.hero-track-wrap {
+    position: relative;
+    border-radius: 18px;
+}
+
+.hero-track .carousel-card img {
+    height: 560px;
+}
+
+.carousel-track-wrap {
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.45s ease;
+}
+
+.carousel-card {
+    min-width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-control {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #D9DDE6;
+    background: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    color: #262A2E;
+}
+
+.hero-prev,
+.hero-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.hero-prev {
+    left: 12px;
+}
+
+.hero-next {
+    right: 12px;
+}
+
+.carousel-control:hover {
+    background: #2B3990;
+    color: #FFFFFF;
+    border-color: #2B3990;
+}
+
+.hero-thumbs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hero-thumb {
+    min-height: 52px;
+    border: 1px solid #D9DEE7;
+    border-radius: 8px;
+    background: #F2F4F8;
+    cursor: pointer;
+}
+
+.hero-thumb.is-active {
+    border-color: #2B3990;
+    background: #E9EDFF;
+}
+
+.hero-info h1 {
+    margin: 12px 0 14px;
+    font-size: 56px;
+    line-height: 1.08;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+}
+
+.hero-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    padding: 3px 12px;
+    font-weight: 500;
+    border: 1px solid #E1E3E8;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    background-color: #F7F8F9;
+}
+
+.badge-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.hero-badges span {
+    border-radius: 6px;
+    /* padding: 6px 10px; */
+    font-size: 12px;
+    color: #4E596B;
+}
+
+.hero-info ul {
+    margin: 0 0 14px;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-info li {
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 16px;
+    font-weight: 400;
+    color: #0D0D0D;
+}
+
+
+.hero-price-card {
+    background: #fff;
+    border: 1px solid #D9DEE8;
+    border-radius: 12px;
+    padding: 14px 12px;
+    margin-bottom: 14px;
+}
+
+.hero-price-card .label {
+    margin: 0;
+    color: #646E7A;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hero-price-card .value {
+    margin: 6px 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero-price-card .chips {
+    margin: 0 0 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.hero-price-card .chips span {
+    background: #FEF3C7;
+    color: #92400E;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hero-price-card .cert {
+    margin: 0;
+    font-size: 14px;
+    color: #0D0D0D;
+    background-color: #F3F4F6;
+    border-radius: 6px;
+    padding: 6px 12px;
+    display: inline-block;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero-actions a {
+    text-decoration: none;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.hero-actions .primary {
+    background: #2B3990;
+    color: #FFFFFF;
+}
+
+.hero-actions .secondary {
+    border: 1px solid #2B3990;
+    color: #262A2E;
+    gap: 8px;
+}
+
+.hero-brand-strip {
+    margin-top: 18px;
+    text-align: center;
+    padding: 8px 10px 12px;
+}
+
+.hero-brand-strip p {
+    margin: 0 0 8px;
+    color: #8A93A2;
+    font-size: 14px;
+}
+
+.hero-brand-strip div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    align-items: center;
+}
+
+.hero-brand-strip img {
+    width: 100%;
+    max-width: 120px;
+    justify-self: center;
+}

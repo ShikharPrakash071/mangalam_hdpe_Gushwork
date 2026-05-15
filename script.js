@@ -37,3 +37,65 @@ document.addEventListener("DOMContentLoaded", () => {
             thumb.classList.toggle("is-active", thumbIndex === activeIndex);
         });
     }
+
+    
+    // Sticky top bar appears only after user scrolls beyond first fold.
+    function handleScroll() {
+        if (!firstFold || !topbar) {
+            return;
+        }
+
+        const showTopbar = window.scrollY > firstFold.offsetHeight;
+        topbar.classList.toggle("show", showTopbar);
+    }
+
+    prevSlideButton?.addEventListener("click", () => {
+        updateCarousel(activeIndex - 1);
+    });
+
+    nextSlideButton?.addEventListener("click", () => {
+        updateCarousel(activeIndex + 1);
+    });
+
+    heroThumbs.forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+            const index = Number(thumb.dataset.index);
+            if (!Number.isNaN(index)) {
+                updateCarousel(index);
+            }
+        });
+    });
+
+    function updateProcessImage(index) {
+        if (!processMediaTrack || processImages.length === 0) {
+            return;
+        }
+        processImageIndex = (index + processImages.length) % processImages.length;
+        processMediaTrack.style.transform = `translateX(-${processImageIndex * 100}%)`;
+    }
+
+    processPrevButton?.addEventListener("click", () => {
+        updateProcessImage(processImageIndex - 1);
+    });
+
+    processNextButton?.addEventListener("click", () => {
+        updateProcessImage(processImageIndex + 1);
+    });
+
+    processTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            processTabs.forEach((item) => item.classList.remove("is-active"));
+            tab.classList.add("is-active");
+
+            if (processTitle) {
+                processTitle.textContent = tab.dataset.title || "";
+            }
+            if (processDescription) {
+                processDescription.textContent = tab.dataset.description || "";
+            }
+            if (processPoints) {
+                const pointOne = tab.dataset.pointOne || "";
+                const pointTwo = tab.dataset.pointTwo || "";
+                processPoints.innerHTML = `<li>${pointOne}</li><li>${pointTwo}</li>`;
+            }
+        });
