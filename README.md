@@ -143,17 +143,6 @@ Coming Soon
 
 ---
 
-## Preview
-
-### Homepage Preview
-
-_Add project screenshots here later_
-
-```md
-![Homepage Preview](assets/images/project-preview.png)
-```
-
----
 
 ## Getting Started
 
